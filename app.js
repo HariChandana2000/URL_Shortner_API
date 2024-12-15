@@ -48,7 +48,7 @@ app.post("/shorten", (req, res) => {
         res.render("index", { newURL: "Something went wrong!" });
       }
     } else {
-      const newShortURL = `http://localhost:${PORT}/${found.short}`;
+      const newShortURL = `https://url-shortner-api-qaut.onrender.com/${found.short}`;
       res.render("index", { newURL: newShortURL });
     }
   }
